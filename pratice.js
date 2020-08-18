@@ -1,5 +1,14 @@
+import { default as Card } from "./card.js";
+
 // Simple Addition Function in Javascript 
 function add(a, b) { 
     return a+b 
-    } 
-    console.log(add(4, 6)) 
+} 
+
+
+var card1 = new Card("CLUB", "K");
+
+console.log(card1);
+// console.log(Card.filename);
+// console.log(Card.id);
+// console.log(Card.exports);

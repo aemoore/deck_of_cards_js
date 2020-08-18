@@ -1,8 +1,11 @@
-class Card {
-    constructor(suit, value) {
-      this.suit = suit;
+ class Card {
+    constructor(value, suit) {
       this.value = value;
+      this.suit = suit;
     }
   }
-  mycard = new Card("S", "K");
-  console.log(mycard)
+
+  var card = new Card("A", "SPADE");
+  console.log(card);
+
+ export default Card;

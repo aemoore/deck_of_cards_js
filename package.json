@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "deck_of_card_nodejs",
+  "version": "1.0.0",
+  "description": "Appian test",
+  "main": "practice.js",
+  "scripts": {
+    "start": "node practice.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aemoore/deck_of_cards_js.git"
+  },
+  "author": "aemoore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aemoore/deck_of_cards_js/issues"
+  },
+  "homepage": "https://github.com/aemoore/deck_of_cards_js#readme"
+}
