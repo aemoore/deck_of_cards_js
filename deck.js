@@ -30,6 +30,9 @@ var face_values = [values.A, values.TWO, values.THREE,
 
 var suit_values = [suits.SPADE, suits.HEART, suits.CLUB, suits.DIAMOND];
 
+/**
+ * Deck of cards class. Has 'deck' property representing a deck of playing cards.
+ */
 class Deck {
     
     constructor() {
