@@ -31,7 +31,19 @@ var face_values = [values.A, values.TWO, values.THREE,
 var suit_values = [suits.SPADE, suits.HEART, suits.CLUB, suits.DIAMOND];
 
 class Deck {
-
+    
+    constructor() {
+        var deck = [];
+        face_values.forEach(face_value_element => {
+            suit_values.forEach(suit_element => {
+                var card = new Card(face_value_element, suit_element);
+                deck.push(card)
+            })
+        });
+        this.deck = deck;
+        this.shuffle(this.deck);
+    }
+    
     /**
      * Shuffles array in place.
      * @param {Array} a items An array containing the items.
@@ -45,18 +57,6 @@ class Deck {
             this.deck[j] = x;
         }
         return this.deck;
-    }
-
-    constructor() {
-        var deck = [];
-        face_values.forEach(face_value_element => {
-            suit_values.forEach(suit_element => {
-                var card = new Card(face_value_element, suit_element);
-                deck.push(card)
-            })
-        });
-        this.deck = deck;
-        this.shuffle(this.deck);
     }
 
     /**
