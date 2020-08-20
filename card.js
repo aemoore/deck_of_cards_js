@@ -5,7 +5,4 @@
     }
   }
 
-  var card = new Card("A", "SPADE");
-  console.log(card);
-
  export default Card;
