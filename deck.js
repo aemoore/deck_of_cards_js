@@ -41,7 +41,6 @@ class Deck {
             })
         });
         this.deck = deck;
-        this.shuffle(this.deck);
     }
     
     /**
@@ -56,7 +55,6 @@ class Deck {
             this.deck[i] = this.deck[j];
             this.deck[j] = x;
         }
-        return this.deck;
     }
 
     /**
